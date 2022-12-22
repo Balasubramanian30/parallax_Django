@@ -1,0 +1,159 @@
+{% comment %} <!DOCTYPE html> {% endcomment %}
+<html lang="en" dir="ltr">
+
+<head>
+    {%load static %}
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href={% static "images/logo.svg" %} type="image/x-icon">
+    <link rel="stylesheet" href={%  static 'css/style.css' %}>
+    <title>Moonlight Parallax</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Works</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home-section">
+        <img src={%  static "images/stars.png" %} alt="Stars overlay" id="stars">
+        <img src={%  static "images/moon.png" %} alt="Moon" id="moon">
+        <img src={%  static "images/mountains_back.png" %} alt="Mountains back" id="mountains_back">
+        <a href="#about" id="btn-letsgo">Let's go!</a>
+        <img src={%  static "images/mountains_front.png" %} alt="Mountains front" id="mountains_front">
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>What is a parallax?</h2>
+        <p>
+            The parallax scrolling allows the user to perceive an impression of depth. The website appears as a 3D
+            animation that scrolls down the page. This operational concept is particularly well adapted to
+            storytelling,
+            as the reading of the contents is encouraged by the scrolling effects, animations and advertising
+            displays.
+            The parallax scrolling is also found in web design under the terms parallax website, scrolling website
+            or
+            parallax web design.
+        </p>
+        <p>
+            The term parallax scrolling is used to describe websites whose operating concept differs significantly
+            from
+            conventional navigation menus: websites with parallax scrolling are operated using the scroll function
+            of
+            the mouse. If the user scrolls through the website, the elements of the website move at different rates.
+            A
+            background image moves slowly, while images or graphic elements in the foreground move faster.
+        </p>
+        <h3>General information</h3>
+        <p>
+            Parallax Scrolling works with what is called parallax scrolling. When an observer moves parallel to two
+            objects, the objects appear to move at different speeds. The closer object seems to move faster, the one
+            further away slower. This effect of perceptual psychology gives the observer a particular impression of
+            depth, because the light reflections of the object near him are perceived more quickly by the retina.
+            The
+            human brain processes these stimuli in such a way that the space represented is perceived as if it were
+            in
+            3D.
+        </p>
+        <p>
+            The impact of parallax scrolling is important in geometry, astronomy, photography and metrology. In 2D
+            video
+            games, parallax is used to create depth and to give orientation to the player. In recent years, the
+            parallax
+            scrolling effect is also used in web design. The objective is to improve the registration of the
+            presented
+            information and to design the website in an interactive way. Users are then expected to remember the
+            range
+            of information based on the presentation and find the functionality of the website enjoyable (Joy of
+            use).
+        </p>
+        <h3>Functionality</h3>
+        <p>
+            Parallax scrolling can be created in different ways on websites. In general, background images and
+            visual
+            elements are inserted in the foreground so that the viewer can move through the landscape via the scroll
+            function. The global image or the visible area above the fold is the landmark - also called viewport -
+            for
+            the viewer: the website moves, so to speak, from this fixed landmark, while the individual elements move
+            more slowly and quickly. These movements are caused by Slides, Fade out, Fade in and fixed elements such
+            as
+            text or graphics loaded continuously via so-called HTML Reflow. The arrangement of the partly animated
+            elements on the parallax scroll leads to a dynamic display of the website contents: the user
+            "experiences"
+            the contents as they move horizontally.
+        </p>
+        <p>
+            The website itself is, from the point of view of its design, often a Single Page or OnePager website:
+            source
+            code, texts, images, CSS and scripts are in one and the same document filed on a server. The effects are
+            controlled via selectors and CSS tags, the requests are managed by the effects, after being triggered by
+            the
+            user who has scrolled the page. In the case of multiple scripts, very detailed graphics, high resolution
+            images or high rendering, the loading time of the content can be longer than expected. For this reason,
+            it
+            is advisable to use effects only in a subtle way and it is always better to choose a light source code.
+            Ideally, parallax scrolling is part of the overall website concept, which can also be a multi-page
+            website
+            for targeted use.
+        </p>
+        <h3>In practice</h3>
+        <p>
+            The most common use case is storytelling. Here, the contents are arranged in a way that tells a story -
+            while the user scrolls down the page. The range of information and the technical representation of the
+            contents are combined. Freelancers, websites, online stores, landing pages with many calls to action,
+            product launch websites and advertising campaigns also benefit from the advantages of parallax scrolling
+            for storytelling.
+
+            From a web design point of view, the following points are relevant for the representation of information
+            using parallax scrolling :
+        </p>
+        <p>
+            Parallax scrolling should be used in a minimalist way if we want to move towards a flat design.
+            It should act as a visual storytelling.
+        </p>
+        <ul>
+            <li>It should give pleasure to the user and no frustration.</li>
+            <li>It should push the user towards an action. For example a contact or the order of a product.</li>
+            <li>It should be retroactively compatible with older versions of browsers and work without any problems
+                on mobile browsers.</li>
+        </ul>
+        <p>
+            If these criteria are not met when creating a website based on parallax scrolling, the end user may be
+            faced with major problems. In the worst case, the website would be unusable, the information impossible
+            to consult, and the website would not reach its goal. Too many technical difficulties could frustrate
+            the users and also damage the image of the site.
+        </p>
+    </section>
+
+    <footer>
+        <a href="#" class="logo"><img src={%  static "images/logo.svg" %} alt="Logo"></a>
+        <p>2022 © BalU</p>
+        <div class="social">
+            <a href="https://codepen.io/Balasubramanian30" target="_blank" rel="noopener noreferrer"
+                title="Link to author's Codepen profile">
+                <i class="fa-brands fa-codepen"></i>
+            </a>
+            <a id="profile-link" href="https://github.com/Balasubramanian30" target="_blank" rel="noopener noreferrer"
+                title="Link to author's GitHub profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            </a>
+            <a href="https://instagram.com/baluu2099?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer"
+                title="Link to author's Twitter profile">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src={% static "js/parallax.js" %}></script>
+    <script src="https://kit.fontawesome.com/dbc353f1d2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

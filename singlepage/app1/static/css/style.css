@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/*===== All and body =====*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(#2b1055, #7597de);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/*====== Custom scrollbar ======*/
+
+* {
+  scrollbar-color: #fff transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c0522;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/*===== Responsive Mobile View =====*/
+
+@media screen and (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+/*===== CSS =====*/
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  background-color: #fff;
+  color: #2b1055;
+}
+
+/* Home section */
+.home-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+
+.home-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.home-section img#moon {
+  mix-blend-mode: screen;
+}
+
+.home-section img#mountains_front {
+  z-index: 10;
+}
+
+/* Let's go button */
+#btn-letsgo {
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  text-decoration: none;
+  transform: translateY(100px);
+  transition: 0.5s;
+}
+
+#btn-letsgo:hover {
+  background-color: #2b1055;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* About section */
+.about-section {
+  position: relative;
+  display: block;
+  padding: 50px;
+  background-color: #1c0522;
+}
+
+.about-section h2 {
+  margin: 0.65em 0;
+  color: #fff;
+  font-size: 3.25em;
+}
+
+.about-section h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-size: 2em;
+}
+
+.about-section p {
+  margin: 1em 0;
+  color: #fff;
+  font-size: 1em;
+}
+
+.about-section ul {
+  margin: 1em 0;
+  padding-left: 2.5em;
+}
+
+.about-section ul li {
+  margin: 0.5em 0;
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b1055;
+  color: #fff;
+}
+
+footer .logo {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .logo img {
+  height: 100%;
+  width: 100%;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .social a {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+footer .social a:hover {
+  color: #7597de;
+}
